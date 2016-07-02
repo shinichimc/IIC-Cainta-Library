@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+      body{
+        font-family: "PT Sans", "verdana", sans-serif;
+        
+        background : rgb(241,240,238);
+        border-top: 7px #1253A4 solid;
+        color:rgba(41,41,41,0.85);
+        /*background-size:contain;*/
+        /*background-attachment:fixed;*/      
+      }
+      #table1{
+      
+        border: 3px solid rgba(44,44,44,0.7);
+        margin: 10px auto 10px;
+        
+
+      }
+      #table1 tr,#table1 th, #table1 td{
+        border: 1px solid rgb(100,100,100);
+        padding:10px;
+      }
+
+      #table2{
+      
+        border: 3px solid rgba(44,44,44,0.7);
+        margin: auto;
+        margin: 0 auto 10px;
+
+      }
+      #table2 tr,#table2 th, #table2 td{
+        border: 1px solid rgb(100,100,100);
+        padding:10px;
+        text-align:center;
+      }
+      .button1{
+        float:right;
+      }
+
+      
+      a, a:link{
+        font-weight:800;
+        text-decoration:underline;
+        color:rgba(41,41,41,0.85);
+      }
+      a:hover{
+        color:red;
+        font-weight:900;
+      }
+      
+      #wrapper{     
+        /*margin: 0 auto 0; /*centering*/*/
+        -webkit-box-shadow: 1px 1px 5px 1px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    1px 1px 5px 1px rgba(50, 50, 50, 0.5);
+        box-shadow:         1px 1px 5px 1px rgba(50, 50, 50, 0.5);
+        width:40%; /* parent = body */
+        height:540px;
+        margin: 30px auto 0;
+        background-color:rgba(255,255,255,0.8);
+        padding-top:10px;
+        color:rgba(41,41,41,0.85);
+        overflow:visible;
+        word-wrap:break-word; 
+      }
+
+      img{
+       width:30%;
+       position:absolute;
+        top:-70px;
+        -webkit-transition: all 0.2s ease-out;
+      }
+      #logo:hover{
+        opacity:0.7;
+      }
+    
+      footer{
+        position:absolute;
+        bottom:0;
+        font-size:70%;
+        width:100%;
+        height:50px;
+        background-color:rgba(0,38,38,0.25);
+        color:white;
+        text-align:center;
+      }
+      footer p{
+        padding-top: 20px;
+      }
+      .error-message{
+        font-size:80%;
+        position:absolute;
+        margin:auto;
+        width:80%;
+        height:50px;
+        top:10px;
+        left:10%;
+        background:rgba(255,235,232,0.7);
+        border: 1px solid rgb(221,60,16);
+        padding:16px 10px 10px 10px;
+      }
+
+      
+
+

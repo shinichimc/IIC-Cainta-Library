@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+	<title>Informatics International College Library</title>
+	
+
+    <style type="text/css">
+    .box{
+    	width:100px;
+    	height:100px;
+    	border:solid 1px black;
+    }
+
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<button id="btn0">clear</button><br>
+	<button id="btn1">btn1</button><br>
+	<button id="btn2">clone() and append() every time</button><br>
+	<button id="btn3">clone() and append() at the end</button><br>
+	<button id="btn4">html() at the end</button><br>
+	<button id="btn5">innerHTML =... at the end</button><br>
+
+	<div id="container"></div>
+	<div id="template" style="background-color:blue">template</div>
+
+	
+	<script type="text/javascript">
+	  var container = $("#container");
+	  var template = $("#template");
+	  
+	  var label;
+
+	  $("#btn0").click(function() {
+	    container.empty();
+	  });
+
+	  // Slowest!
+	  $("#btn1").click(function() {
+	    
+	    
+	    for (i = 0; i < 1000; i++) {
+	      var o = $('<div id="template" style="background-color:blue">' + i + '</div>');
+	      container.append(o);
+	    }
+	    
+	  });
+
+	  // Slow.
+	  $("#btn2").click(function() {
+	    label = $(this).text();
+	    console.time(label);
+	    for (i = 0; i < 1000; i++) {
+	      var o = template.clone().attr("id", null).text(i);
+	      container.append(o);
+	    }
+	    console.timeEnd(label);
+	  });
+
+	  // 
+	  $("#btn3").click(function() {
+	    label = $(this).text();
+	    console.time(label);
+	    var arr = [];
+	    for (i = 0; i < 1000; i++) {
+	      var o = template.clone().attr("id", null).text(i);
+	      arr.push(o);
+	    }
+	    container.append(arr);
+	    console.timeEnd(label);
+	  });
+
+	  // Fastest!
+	  $("#btn4").click(function() {
+	    label = $(this).text();
+	    console.time(label);
+	    var html = "";
+	    for (i = 0; i < 1000; i++) {
+	      html += '<div style="background-color:blue">' + i + '</div>';
+	    }
+	    container.html(html);
+	    console.timeEnd(label);
+	  });
+
+	  // Fast
+	  $("#btn5").click(function() {
+	    label = $(this).text();
+	    console.time(label);
+	    var html = "";
+	    for (i = 0; i < 1000; i++) {
+	      html += '<div style="background-color:blue">' + i + '</div>';
+	    }
+	    container[0].innerHTML = html;
+	    console.timeEnd(label);
+	  });
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@charset "utf-8";
+body {
+	
+	width:100%;
+	color:rgba(140,140,140,1);
+}
+button a, button a:visited, button a:link{
+	text-decoration: none;
+	color:black;
+	font-size:100%;
+}
+a:link, a:visited {
+	color:navy;
+}
+a {
+	text-decoration:none;
+	font-size:120%;
+	color:rgba(200,200,200);
+}
+h1{
+	color:rgb(41,41,41);
+	font-family:Arial;
+}
+li {
+	/*list-style-type:none;*/
+	line-height:80px;
+}
+
+#wrapper {
+	width:30%;
+	height:auto;
+	background: rgba(230,230,230,1);
+	margin : 20px auto 20px;
+	padding:20px;
+	text-align:center;
+	border-radius : 20px;
+	border: 1px solid rgba(180,180,180,1);
+}
+table {
+	margin: 0 auto;
+}

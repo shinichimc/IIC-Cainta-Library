@@ -1,0 +1,42 @@
+@charset "utf-8";
+        @font-face 
+        {
+        font-family: Noto Sans;
+        src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf); 
+        }
+　　　　　　@font-face
+        {
+        font-family: hahaha;
+        src: url(../fonts/alegreya-sans-ht-full-pack-otf/AlegreyaSansSC-Italic);
+        font-weight:bold;
+        }
+        @font-face
+        {
+        font-family: hehehe;
+        src: url(../fonts/alegreya-sans-ht-full-pack-otf/beast_of_avalon.otf);
+        font-weight:bold;
+        }
+         @font-face
+        {
+        font-family: telex;
+        src: url(../fonts/telex/Telex-Regular.ttf);
+        font-weight:bold;
+        }
+        @font-face
+        {
+        font-family:baron;
+        src: url(../fonts/baron_neue/Baron_Bold.otf);
+        }
+        @font-face
+        {
+         font-family:"PT";
+         src : url(../fonts/PT_Sans-Web-Regular.ttf);   
+        }
+      
+        @font-face
+        {
+        font-family: nue;
+        src: url(../fonts/out-of-step-font-company_nue-gothic/Nue-Gothic.ttf);
+        font-weight:bold;
+        }
+        

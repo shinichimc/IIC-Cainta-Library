@@ -1,0 +1,14 @@
+ @charset "utf-8";
+
+ @font-face
+        {
+        font-family: alegreya;
+        src: url(fonts/alegreya-sans-ht-full-pack-otf/AlegreyaSansSC-Italic);
+        font-weight:bold;
+        }
+        @font-face
+        {
+        font-family: creatif;
+        src: url(fonts/Creatif/Creatif.ttf);
+        font-weight:bold;
+        }

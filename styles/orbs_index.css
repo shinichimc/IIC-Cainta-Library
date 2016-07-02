@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+
+body{
+  font-family:alegreya;
+  
+}
+.smallbox{
+	width:100px;
+	height:100px;
+	background-color:#2D2F57;
+	float:left;
+	/*margin-left:5px;*/
+
+}
+.boxdeco{
+	
+	
+	height:100px;
+	background-color:maroon;
+	display:inline-block;
+	margin-left:50px;
+	margin-bottom:10px;
+}

@@ -1,0 +1,120 @@
+
+#accordion{
+  position:relative;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0;
+  border-top: 15px solid #1b4958;
+  border-bottom: 15px solid #1b4958;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 1;
+}
+#accordion input{
+  position:absolute;
+  height: 0;
+  padding:0;
+}
+#accordion div div{
+  width:100%;
+  position: relative;
+  padding: 15px 10px 12px 40px;
+  border-top: 1px solid #d4ebf2;
+  border-bottom: 1px solid #86c5da;
+  /*background: #add8e6;*/
+  background:rgb(250,250,250);
+}
+#accordion label:first-child div div{
+  border-top: 0;
+}
+#accordion label:last-child div div{
+  border-bottom: 0;
+}
+#accordion div div:hover{
+  background: #a0d2e2;
+	cursor: pointer;
+}
+#accordion div div:before{
+  position:absolute;
+  top: 13px;
+  left:10px;
+  color: #2f7f99;
+  font: 100% 'fontello';
+  content: "\e825";
+}
+#accordion div div:after{
+  position:absolute;
+  top: 15px;
+  right:10px;
+	color: #2f7f99;
+  font: 100%;
+  content: ">";
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s;
+}
+#accordion input:checked + div div:after{
+  top: 12px;
+  right: 15px;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#accordion ul{
+  list-style: none;
+  margin: 0;
+  background: #e1f1f6;
+  width:100%;
+}
+#accordion ul li a{
+  font-size:80%;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  padding: 0px;
+  color: #333;
+  text-decoration: none;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s;
+}
+#accordion input:checked + div ul li a{
+  position:relative;
+  background: none;
+  line-height: 1;
+	height: 50px;
+  padding: 13px 20px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #a0d2e2;
+}
+#accordion input:checked + div ul li:first-child a{
+  border-top: 0;
+  box-shadow: 0 7px 7px -7px rgba(0,0,0,.5) inset;
+}
+#accordion input:checked + div ul li:last-child a{
+  border-bottom: 0;
+}
+#accordion input:checked + div ul li a:hover{
+  background: #d4ebf2;
+  border-top-color: #eef7fa;
+}
+#accordion input:checked + div ul li a:before{
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  color: #2f7f99;
+  font:16px/100% 'fontello';
+  font-size:80%;
+  content: "\e824";
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s;
+}
